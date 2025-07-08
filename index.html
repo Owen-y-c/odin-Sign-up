@@ -1,32 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odin Sign up page</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up page</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="wrapper-main">
-        <div class="image-section">
-            <img src="https://placehold.co/600x400/EEE/31343C" alt="placeholder image">
-            <div class="wrapper-credits">
-                <p class="credit">made by:<br>
-                    <a href="http://" target="_blank" rel="noopener noreferrer"><span class="fancy-credit">Y-C</span></a>
-                </p>
-                <p class="credit">image from:<br>
-                    <a href="http://" target="_blank" rel="noopener noreferrer"><span class="fancy-credit">Source</span></a>
-                </p>
-            </div>
-        </div>
+  <div class="wrapper-main">
+    <div class="image-section">
+      <img src="https://placehold.co/600x400/EEE/31343C" alt="placeholder image">
 
-        <main>
-            <h1 class="logo-text">Anon</h1>
-            <p class="disclaimer">this is <em>Not</em> a real site, please do not put any real information here</p>
-            <form action=""></form>
-        </main>
+      <div class="wrapper-credits">
+        <p class="credit">made by:<br>
+          <a href="http://" target="_blank" rel="noopener noreferrer"><span class="fancy-credit">Y-C</span></a>
+        </p>
+        <p class="credit">image from:<br>
+          <a href="http://" target="_blank" rel="noopener noreferrer"><span class="fancy-credit">Source</span></a>
+        </p>
+      </div>
     </div>
 
-    <script src="script.js"></script>
+    <main>
+      <section class="description">
+        <h1 class="logo-text">Anon</h1>
+        <p>Enter a world of ???? and ????? by creating your perfect account</p>
+        <p>Be the first to enter our personalized services, recommendations and special offers!</p>
+        <p class="disclaimer-fineprint">This is <em>Not</em> a real site, please do not put any real information here.</p>
+      </section>
+
+      <form action="" method="post" class="form-main">
+        <h2>Ready to sign up?</h2>
+        <p class="disclaimer">Required fields are followed by <span aria-label="required" class="required-indicator">*</span>.</p>
+
+        <section class="userInfo">
+          <p>
+            <label for="name">
+              <span>User name:</span>
+              <strong><span aria-label="required" class="required-indicator">*</span></strong>
+            </label>
+            <input type="text" id="name" name="user_name" required>
+          </p>
+          <p>
+            <label for="email">
+              <span>Email:</span>
+              <strong><span aria-label="required" class="required-indicator">*</span></strong>
+            </label>
+            <input type="email" id="email" name="user_mail" required>
+          </p>
+        </section>
+
+        <section class="userPassword">
+          <p class="disclaimer-fineprint">password must be between 8 and 32 digits long.</p>
+          <p>
+            <label for="passwrd">
+              <span>Password:</span>
+              <strong><span aria-label="required" class="required-indicator">*</span></strong>
+            </label>
+            <input type="password" id="pwd" name="user_password" required minlength="8" maxlength="32">
+          </p>
+          <p>
+            <label for="passwrdConfirm">
+              <span>Confirm Password:</span>
+              <strong><span aria-label="required" class="required-indicator">*</span></strong>
+            </label>
+            <input type="password" id="passwrdConfirm" name="user_passsword_confirm" required minlength="8" maxlength="32">
+          </p>
+        </section>
+
+        <section class="optional">
+          <p>
+            <label for="phoneNumber">
+              <span>Phone Number:</span>
+            </label>
+            <input type="tel" id="phoneNumber" name="user_phone_number">
+          </p>
+          <p>
+            <label for="favColor">
+              <span>Favorite Color:</span>
+            </label>
+            <input type="color" id="favColor" name="user_color" >
+          </p>
+        </section>
+
+        <section class="validate">
+          <p>
+            <button type="submit" class="submitBtn">Let's get started!</button>
+          </p>
+        </section>
+
+      </form>
+    </main>
+  </div>
+
+  <footer>
+      <p class="fineprint">after logging in you agree to forfit all rights to your soul</p>
+    </footer>
+  <script src="script.js"></script>
 </body>
 </html>

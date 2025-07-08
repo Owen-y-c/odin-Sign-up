@@ -9,27 +9,32 @@
 <body>
   <div class="wrapper-main">
     <div class="image-section">
-      <img src="https://placehold.co/600x400/EEE/31343C" alt="placeholder image">
+      <img src="https://cdn.pixabay.com/photo/2024/09/15/10/05/building-9048827_1280.jpg" alt="image of a building">
 
       <div class="wrapper-credits">
-        <p class="credit">made by:<br>
-          <a href="http://" target="_blank" rel="noopener noreferrer"><span class="fancy-credit">Y-C</span></a>
-        </p>
-        <p class="credit">image from:<br>
-          <a href="http://" target="_blank" rel="noopener noreferrer"><span class="fancy-credit">Source</span></a>
-        </p>
+        <a href="http://" target="_blank" rel="noopener noreferrer">
+          <p class="credit">made by:<br>
+            <span class="fancy-credit">O-Y-C</span>
+          </p>
+        </a>
+
+          <a href="https://pixabay.com/photos/building-cathedral-architecture-9048827/" target="_blank" rel="noopener noreferrer">
+            <p class="credit">image from:<br>
+              <span class="fancy-credit">Marrak</span>
+            </p>
+          </a>
       </div>
     </div>
 
     <main>
       <section class="description">
-        <h1 class="logo-text">Anon</h1>
-        <p>Enter a world of ???? and ????? by creating your perfect account</p>
-        <p>Be the first to enter our personalized services, recommendations and special offers!</p>
-        <p class="disclaimer-fineprint">This is <em>Not</em> a real site, please do not put any real information here.</p>
+        <h1 class="logo-text">Anon.inc</h1>
+        <p>Enter the world of corporate by creating your perfect account</p>
+        <p class="ominous">With our personalized services, recommendations and insider knowledge, You'll never want out.</p>
+        <p class="disclaimer">This is <em>Not</em> a real site, please do not put any real information here.</p>
       </section>
 
-      <form action="" method="post" class="form-main">
+      <form action="" method="post" class="form-main" onsubmit="event.preventDefault();alert('You did it!')">
         <h2>Ready to sign up?</h2>
         <p class="disclaimer">Required fields are followed by <span aria-label="required" class="required-indicator">*</span>.</p>
 
@@ -38,47 +43,49 @@
             <label for="name">
               <span>User name:</span>
               <strong><span aria-label="required" class="required-indicator">*</span></strong>
-            </label>
+            </label><br>
             <input type="text" id="name" name="user_name" required>
           </p>
           <p>
             <label for="email">
               <span>Email:</span>
               <strong><span aria-label="required" class="required-indicator">*</span></strong>
-            </label>
+            </label><br>
             <input type="email" id="email" name="user_mail" required>
           </p>
         </section>
+        <hr>
 
+        <p class="disclaimer">password must be between 8 and 16 digits long.</p>
         <section class="userPassword">
-          <p class="disclaimer-fineprint">password must be between 8 and 32 digits long.</p>
           <p>
-            <label for="passwrd">
+            <label for="pwd">
               <span>Password:</span>
               <strong><span aria-label="required" class="required-indicator">*</span></strong>
-            </label>
-            <input type="password" id="pwd" name="user_password" required minlength="8" maxlength="32">
+            </label><br>
+            <input type="password" id="pwd" name="user_password" required minlength="8" maxlength="16">
           </p>
           <p>
             <label for="passwrdConfirm">
               <span>Confirm Password:</span>
               <strong><span aria-label="required" class="required-indicator">*</span></strong>
-            </label>
-            <input type="password" id="passwrdConfirm" name="user_passsword_confirm" required minlength="8" maxlength="32">
+            </label><br>
+            <input type="password" id="passwrdConfirm" name="user_passsword_confirm" required minlength="8" maxlength="16">
           </p>
         </section>
+        <hr>
 
         <section class="optional">
           <p>
             <label for="phoneNumber">
               <span>Phone Number:</span>
-            </label>
-            <input type="tel" id="phoneNumber" name="user_phone_number">
+            </label><br>
+            <input type="tel" id="phoneNumber" name="user_phone_number" maxlength="17">
           </p>
           <p>
             <label for="favColor">
               <span>Favorite Color:</span>
-            </label>
+            </label><br>
             <input type="color" id="favColor" name="user_color" >
           </p>
         </section>
@@ -89,13 +96,10 @@
           </p>
         </section>
 
+        <p class="fineprint">after logging in you agree to forfit all rights to your soul</p>
       </form>
     </main>
   </div>
-
-  <footer>
-      <p class="fineprint">after logging in you agree to forfit all rights to your soul</p>
-    </footer>
   <script src="script.js"></script>
 </body>
 </html>
